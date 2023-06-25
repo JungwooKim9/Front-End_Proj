@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 1350px;
+            height: 170px;
+            margin: auto;
+            position: relative;
+        }
+
+        header .logo {
+            width: 170px;
+            height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 590px;
+        }
+
+        header .headerbox {
+            width: 350px;
+            height: 35px;
+            position: absolute;
+            right: 0px;
+            top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .headertext {
+            width: 66px;
+            height: 30px;
+            margin: 2px;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .search {
+            border-bottom: 1px solid black;
+            width: 150px;
+            height: 35px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        nav {
+            background-color: rgb(70, 70, 70);
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav .navtext {
+            width: 70px;
+            height: 40px;
+            margin-left: 60px;
+            margin-right: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        main .banner {
+            width: 1556px;
+        }
+
+        main .sec {
+            height: 650px;
+            position: relative;
+        }
+
+        main .sec .htext {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        main .sec .line {
+            border-bottom: 1px solid black;
+            height: 30px;
+            width: 100px;
+            position: relative;
+            left: 730px;
+        }
+
+        main .sec .productbox {
+            border: 1px solid red;
+            position: relative;
+            top: 50px;
+            height: 430px;
+            display: flex;
+            justify-content: center;
+        }
+
+        main .sec .productbox .productsmallbox {
+            border: 1px solid red;
+            position: relative;
+            width: 285px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        main .sec .productbox .productsmallbox .productimg {
+            border: 1px solid black;
+            width: 285px;
+            height: 368px;
+            float: left;
+        }
+
+        main .sec .productbox .productsmallbox .producttext {
+            border: 1px solid red;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 275px;
+            height: 50px;
+        }
+
+        main .sec .productbox .productsmallbox .producttext .productname {
+            border: 1px solid red;
+
+        }
+
+        main .sec .productbox .productsmallbox .producttext .productprice {
+            border: 1px solid red;
+            margin-top: 5px;
+        }
+
+        main .sec .categorybuttonbox {
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        main .sec .categorybuttonbox .categorybuttonsmallbox {
+            background-color: rgb(70, 70, 70);
+            color: white;
+            width: 100px;
+
+            text-align: center;
+            font-size: medium;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        footer {
+            margin-top: 150px;
+            height: 262px;
+            color: #666666;
+        }
+
+        footer .address {
+            background-color: rgb(70, 70, 70);
+            height: 162px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer .footer_menu {
+            float: left;
+            margin-left: 50px;
+            margin-right: 50px;
+            position: relative;
+            top: 10px;
+            color: white;
+        }
+
+        footer .footer_menu li {
+            width: 270px;
+            margin-top: 5px;
+            font-size: small;
+        }
+
+        footer .copyright {
+            height: 100px;
+            text-align: center;
+            padding: 30px;
+            border: solid 1px black;
+            font-size: 11px;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/Logo.png" style="height: 200%;">
+        </div>
+
+        <div class="headerbox">
+            <span class="headertext"> Login </span>
+            <span class="headertext"> Join </span>
+            <span class="headertext"> MyPage </span>
+            <span class="headertext"> Order </span>
+            <span class="headertext"> Cart </span>
+        </div>
+
+        <div class="search">
+            <img src="/img/lens.jpg" style="width: 25px; height: 25px;">
+        </div>
+
+    </header>
+
+    <nav>
+        <span class="navtext best"> Best </span>
+        <span class="navtext sale"> Sale </span>
+        <span class="navtext new"> New </span>
+        <span class="navtext top"> Top </span>
+        <span class="navtext pants"> Pants </span>
+        <span class="navtext outer"> Outer </span>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <img src="/img/Banner.png" style="width: 1556px;">
+        </div>
+
+        <section class="sec">
+            <h2 class="htext"> TO DAY BEST </h2>
+            <div class="line"></div>
+            <div class="productbox">
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec">
+            <h2 class="htext"> CATEGORY BEST </h2>
+            <div class="line"></div>
+            <div class="categorybuttonbox">
+                <span class="categorybuttonsmallbox"> TOP </span>
+                <span class="categorybuttonsmallbox"> PANTS </span>
+                <span class="categorybuttonsmallbox"> OUTER </span>
+            </div>
+            <div class="productbox">
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+
+                <div class="productsmallbox">
+                    <div class="productimg"> </div>
+                    <div class="producttext">
+                        <div class="productname"> 상품명 </div>
+                        <div class="productprice"> 0000원 </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <article class="address">
+            <ul class="footer_menu">
+                <h3> CS CENTER </h3>
+                <li> 카카오톡/네이버톡톡 </li>
+                <li> MON-FRI : 10:00 ~ 17:00 </li>
+                <li> LUNCH: 13:00 ~ 14:00 </li>
+                <li> SAT, SUN, HOLIDAY OFF </li>
+                <li> 대표번호 1111-1111 (유선상담불가) </li>
+            </ul>
+            <ul class="footer_menu">
+                <h3> DELIVERY </h3>
+                <li> 반품주소: </li>
+                <li> 경기도 고양시 덕양구 삼원로 111 물류센터 </li>
+                <li> 대한통운 택배 이용 </li>
+            </ul>
+            <ul class="footer_menu">
+                <h3> BANK ACCOUNT </h3>
+                <li> 국민 1111-111-111111 </li>
+                <li> 신한 1111-111-111111 </li>
+                <li> 우리 1111-111-111111 </li>
+                <li> 기업 1111-111-111111 </li>
+                <li> 농협 1111-111-111111 </li>
+            </ul>
+            <ul class="footer_menu">
+                <h3> MENU </h3>
+                <li> 홈 </li>
+                <li> 이용약관 </li>
+                <li> 개인정보처리방침 </li>
+                <li> 쇼핑몰 이용안내 </li>
+                <li> 찾아오시는 길 </li>
+            </ul>
+        </article>
+
+        <ul class="copyright">
+            <li> ㈜ SIMPLEBUTSLAY | 대표 : 김정우 | 사업자 등록 번호 : 111-11-11111 | 통신판매업 신고: 제2023-경기고양-111호 | 개인정보 보호 책임자 : 홍길동 [사업자정보확인]
+            </li>
+            <li> E-mail : rara980928@google.com | 주소 : 경기도 고양시 덕양구 원흥동 111-1 1층 SIMPLEBUTSLAY 도로명 : 경기도 고양시 삼원로 111 1층 SIMPLEBUTSLAY </li>
+            <li> ⓒ 2023. SIMPLEBUTSLAY All rights reserved. </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

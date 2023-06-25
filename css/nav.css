@@ -1,0 +1,19 @@
+nav {
+    background-color: rgb(70, 70, 70);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navtext {
+    width: 70px;
+    height: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
