@@ -1,0 +1,88 @@
+main .banner {
+    text-align: center;
+}
+
+main section {
+    height: 650px;
+    position: relative;
+}
+
+main section .htext {
+    text-align: center;
+    margin-top: 150px;
+}
+
+main section .linebox {
+    display: flex;
+    justify-content: center;
+}
+
+main section .line {
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100px;
+    
+}
+
+main section .prdtbox {
+    border: 1px solid red;
+    position: relative;
+    top: 50px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+main section .prdtbox .smlbox {
+    border: 1px solid red;
+    position: relative;
+    width: 285px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+main section .prdtbox .smlbox .imgbox {
+    border: 1px solid black;
+    width: 285px;
+    height: 368px;
+    float: left;
+}
+
+main section .prdtbox .smlbox .text {
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 275px;
+    height: 50px;
+}
+
+main section .prdtbox .smlbox .text .name {
+    border: 1px solid red;
+
+}
+
+main section .prdtbox .smlbox .text .price {
+    border: 1px solid red;
+    margin-top: 5px;
+}
+
+main section .ctgrybtnbox {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+main section .ctgrybtnbox .smlbtnbox {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    width: 100px;
+
+    text-align: center;
+    font-size: medium;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}

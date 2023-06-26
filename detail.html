@@ -4,146 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> detail </title>
 
+    <link rel="stylesheet" href="/css/set.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/detail.css">
 
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        main .productimg {
-            border: 1px solid red;
-            width: 470px;
-            height: 607px;
-            position: relative;
-            left: 250px;
-            top: 50px;
-            float: left;
-        }
-
-        main .productinfosec {
-            border: 1px solid red;
-            width: 500px;
-            height: 600px;
-            position: relative;
-            left: 830px;
-            top: 50px;
-        }
-
-        .productinfosec .productname {
-            border: 1px solid red;
-            position: absolute;
-            width: 100%;
-            font-size: 20px;
-            font-weight: bolder;
-        }
-
-        .productinfosec .infobox {
-            border: 1px solid red;
-            width: 500px;
-            height: 500px;
-            position: absolute;
-            top: 28px;
-        }
-
-        .productinfosec .infosmallbox {
-            border: 1px solid red;
-            margin-top: 70px;
-            font-size: 15px;
-        }
-        .productinfosec .infosmallbox .inputbox {
-            border: 1px solid blue;
-            position: absolute;
-            left: 170px;
-            width: 330px;
-            height: 20px;
-        }
-        .productinfosec .line {
-            border: 1px solid rgb(213, 213, 213);
-            position: relative;
-            top: 40px;
-        }
-        .productinfosec .buttonbox {
-            width: 100%;
-            height: 70px;
-            position: absolute;
-            bottom: 0px;
-            display: flex;
-            align-items: center;
-        }
-        .productinfosec .buttonbox .buybox {
-            background-color: rgb(70, 70, 70);
-            border-radius: 3px;
-            color: white;
-            font-size: 20px;
-            width: 300px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .productinfosec .buttonbox .cartbox {
-            border: 1px solid rgb(70, 70, 70);
-            border-radius: 3px;
-            font-size: 20px;
-            width: 200px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 10px;
-        }
-        .productinfosec .infosmallbox .inputbox .input {
-            width: 320px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
+            <div id="logo" onclick="location.href='./index.html'"></div>
             <img src="/img/Logo.png" style="height: 200%;">
         </div>
 
-        <div class="headerbox">
-            <span class="headertext"> Login </span>
-            <span class="headertext"> Join </span>
-            <span class="headertext"> MyPage </span>
-            <span class="headertext"> Order </span>
-            <span class="headertext"> Cart </span>
+        <div class="trbox">
+            <span class="text"> Login </span>
+            <span class="text"> Join </span>
+            <span class="text"> MyPage </span>
+            <span class="text"> Order </span>
+            <span class="text"> Cart </span>
         </div>
 
-        <div class="search">
-            <img src="/img/lens.jpg" style="width: 25px; height: 25px;">
+        <div class="searchbox">
+            <input class="search" type="text" name="search">
+            <img id="img" onclick="location.href='#'" src="/img/lens.jpg" style="width: 25px; height: 25px;">
         </div>
     </header>
 
     <nav>
-        <span class="navtext best"> Best </span>
-        <span class="navtext sale"> Sale </span>
-        <span class="navtext new"> New </span>
-        <span class="navtext top"> Top </span>
-        <span class="navtext pants"> Pants </span>
-        <span class="navtext outer"> Outer </span>
+        <span class="text best"> Best </span>
+        <span class="text sale"> Sale </span>
+        <span class="text new"> New </span>
+        <span class="text top"> Top </span>
+        <span class="text pants"> Pants </span>
+        <span class="text outer"> Outer </span>
     </nav>
 
-    <main>
-        <div class="productimg">
+    <main class="bbox">
+        <div class="pagebox">
+        <div class="prdtimg">
 
         </div>
 
-        <section class="productinfosec">
-            <div class="productname">
+        <section>
+            <div class="prdtname">
                 "상품명"
             </div>
             <div class="infobox">
-                <div class="infosmallbox">
+                <div class="smlbox">
                     <span>
                         판매가격
                     </span>
@@ -151,7 +63,7 @@
                         31,900원
                     </span>
                 </div>
-                <div class="infosmallbox">
+                <div class="smlbox">
                     <span>
                         색상
                     </span>
@@ -163,7 +75,7 @@
                         </select>
                     </span>
                 </div>
-                <div class="infosmallbox">
+                <div class="smlbox">
                     <span>
                         사이즈
                     </span>
@@ -177,7 +89,7 @@
                         </select>
                     </span>
                 </div>
-                <div class="infosmallbox">
+                <div class="smlbox">
                     <span>
                         수량
                     </span>
@@ -188,7 +100,7 @@
 
                 <div class="line"> </div>
 
-                <div class="infosmallbox">
+                <div class="smlbox">
                     <span style="font-weight: bolder;">
                         총 상품 금액
                     </span>
@@ -197,7 +109,7 @@
                     </span>
                 </div>
             </div>
-            <div class="buttonbox">
+            <div class="btnbox">
                 <div class="buybox">
                     구매하기
                 </div>
@@ -207,14 +119,12 @@
             </div>
         </section>
 
-        <section>
-
-        </section>
+    </div>
     </main>
 
     <footer>
         <article class="address">
-            <ul class="footer_menu">
+            <ul class="menu listn">
                 <h3> CS CENTER </h3>
                 <li> 카카오톡/네이버톡톡 </li>
                 <li> MON-FRI : 10:00 ~ 17:00 </li>
@@ -222,13 +132,13 @@
                 <li> SAT, SUN, HOLIDAY OFF </li>
                 <li> 대표번호 1111-1111 (유선상담불가) </li>
             </ul>
-            <ul class="footer_menu">
+            <ul class="menu listn">
                 <h3> DELIVERY </h3>
                 <li> 반품주소: </li>
                 <li> 경기도 고양시 덕양구 삼원로 111 물류센터 </li>
                 <li> 대한통운 택배 이용 </li>
             </ul>
-            <ul class="footer_menu">
+            <ul class="menu listn">
                 <h3> BANK ACCOUNT </h3>
                 <li> 국민 1111-111-111111 </li>
                 <li> 신한 1111-111-111111 </li>
@@ -236,7 +146,7 @@
                 <li> 기업 1111-111-111111 </li>
                 <li> 농협 1111-111-111111 </li>
             </ul>
-            <ul class="footer_menu">
+            <ul class="menu listn">
                 <h3> MENU </h3>
                 <li> 홈 </li>
                 <li> 이용약관 </li>
@@ -246,7 +156,7 @@
             </ul>
         </article>
 
-        <ul class="copyright">
+        <ul class="copyright listn">
             <li> ㈜ SIMPLEBUTSLAY | 대표 : 김정우 | 사업자 등록 번호 : 111-11-11111 | 통신판매업 신고: 제2023-경기고양-111호 | 개인정보 보호 책임자 : 홍길동
                 [사업자정보확인]
             </li>

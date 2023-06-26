@@ -6,16 +6,26 @@ header {
 }
 
 header .logo {
-    width: 170px;
+    width: 270px;
     height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 590px;
+    left: 540px;
 }
 
-header .headerbox {
+header #logo {
+    position: absolute;
+    width: 270px;
+    height: 100px;
+}
+
+header #logo:hover {
+    cursor: pointer;
+}
+
+header .trbox {
     width: 350px;
     height: 35px;
     position: absolute;
@@ -26,7 +36,7 @@ header .headerbox {
     align-items: center;
 }
 
-header .headertext {
+header .text {
     width: 66px;
     height: 30px;
     margin: 2px;
@@ -36,7 +46,7 @@ header .headertext {
     align-items: center;
 }
 
-header .search {
+header .searchbox {
     border-bottom: 1px solid black;
     width: 150px;
     height: 35px;
@@ -46,4 +56,14 @@ header .search {
     display: flex;
     justify-content: right;
     align-items: center;
+}
+
+header .searchbox .search {
+    outline: none ;
+    border-style: none;
+    width: 120px;
+}
+
+header .searchbox #img:hover {
+    cursor: pointer;
 }
