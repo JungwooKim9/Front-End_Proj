@@ -34,7 +34,7 @@ footer .copyright {
     height: 100px;
     text-align: center;
     padding: 30px;
-    border: solid 1px black;
     font-size: 11px;
     color: #888888;
+    list-style: none;
 }
