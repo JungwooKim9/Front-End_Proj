@@ -30,6 +30,11 @@ footer .menu li {
     font-size: small;
 }
 
+.nodeco {
+    text-decoration: none;
+    color: white;
+}
+
 footer .copyright {
     height: 100px;
     text-align: center;

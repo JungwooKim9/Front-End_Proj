@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> short_sleeve_tee_list </title>
-
+    <title> map </title>
     <link rel="stylesheet" href="./css/set.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/list.css">
-
+    <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
 </head>
+
 <body>
+    
     <header>
         <div class="logo">
             <div id="logo" onclick="location.href='./index.html'"></div>
@@ -20,7 +22,17 @@
         </div>
 
         <div class="trbox">
-            <a href="#" class="text"> Login </a>
+            <a id="show" href="#" class="text"> Login </a>
+            <div class="background">
+                <div class="window">
+                  <div class="popup">
+                    <button id="close">팝업닫기</button>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
             <a href="#" class="text"> Join </a>
             <a href="#" class="text"> MyPage </a>
             <a href="#" class="text"> Order </a>
@@ -71,85 +83,10 @@
         </ul>
     </nav>
 
-    <main>
-
-        <section>
-            <h2 class="htext"> BEST STYLE </h2>
-            <div class="linebox">
-                <div class="line"></div>
-            </div>
-            <div class="prdtbox">
-                <div class="smlbox">
-                    <div class="imgbox" onclick="location.href='./detail.html'"> <img src="./p_img/t-shirt_img/w_ns.png"> </div>
-                    <div class="text">
-                        <span class="name" onclick="location.href='./detail.html'"> 라운드 반팔 니트 </span>
-                        <div class="price"> 33000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/b_mst.png"> </div>
-                    <div class="text">
-                        <span class="name"> 반팔 티셔츠 </span>
-                        <div class="price"> 18,000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/b_opts.png"> </div>
-                    <div class="text">
-                        <span class="name"> 프린팅 반팔 티셔츠 </span>
-                        <div class="price"> 21,000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/wb_osts.png"> </div>
-                    <div class="text">
-                        <span class="name"> 스트라이프 반팔 티셔츠 </span>
-                        <div class="price"> 22,000원 </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="prdtbox">
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/g_snt.png"> </div>
-                    <div class="text">
-                        <span class="name"> 와플 하프 니트 </span>
-                        <div class="price"> 34,000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/w_rst.png"> </div>
-                    <div class="text">
-                        <span class="name"> 오버핏 반팔 티셔츠 </span>
-                        <div class="price"> 19,000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/b_scts.png"> </div>
-                    <div class="text">
-                        <span class="name"> 카라 반팔 티셔츠 </span>
-                        <div class="price"> 31,000원 </div>
-                    </div>
-                </div>
-
-                <div class="smlbox">
-                    <div class="imgbox"> <img src="./p_img/t-shirt_img/w_ost.png"> </div>
-                    <div class="text">
-                        <span class="name"> 오버핏 U넥 티셔츠 </span>
-                        <div class="price"> 17,000원 </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
+    <div class="directions">
+        <h1 class="text"> 찾아오시는 길 </h1>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d939.1617815426486!2d126.87351384803037!3d37.65035362418433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9735ff6d0319%3A0xe52d4ad28860dbb1!2z7JuQ7Z2l7Jet!5e0!3m2!1sko!2skr!4v1688544024279!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
     <footer>
         <article class="address">
@@ -194,7 +131,5 @@
             <li> ⓒ 2023. SIMPLEBUTSLAY All rights reserved. </li>
         </ul>
     </footer>
-
-
 </body>
 </html>
