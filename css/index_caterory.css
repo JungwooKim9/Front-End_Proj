@@ -32,7 +32,6 @@ main section .ctgryprdtbox .bigbox .ctgrysmlbox .smlbox {
 }
 
 main section .ctgryprdtbox .bigbox .ctgrysmlbox .smlbox .imgbox {
-    border: 1px solid black;
     width: 285px;
     height: 368px;
 }
