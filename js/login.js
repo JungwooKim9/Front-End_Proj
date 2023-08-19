@@ -1,10 +1,21 @@
-function show() {
-    document.querySelector(".background").className = "background show";
-  }
+const modal = document.getElementById("modal");
+const openModalBtn = document.getElementById("open-modal");
+const closeModalBtn = document.getElementById("close-modal");
 
-  function close() {
-    document.querySelector(".background").className = "background";
-  }
+// 모달창 열기
+openModalBtn.addEventListener("click", () => {
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden"; // 스크롤바 제거
+});
 
-  document.querySelector("#show").addEventListener("click", show);
-  document.querySelector("#close").addEventListener("click", close);
+// 모달창 닫기
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto"; // 스크롤바 보이기
+});
+
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});

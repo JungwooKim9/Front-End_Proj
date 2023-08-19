@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/index_caterory.css">
+    <link rel="stylesheet" href="./css/login.css">
     <script src="./js/index_banner.js"></script>
     <script src="./js/index_category.js"></script>
+    
 </head>
 
 
@@ -25,8 +27,43 @@
         </div>
 
         <div class="trbox">
-            <a href="#" class="text"> Login </a>
-            <a href="#" class="text"> Join </a>
+            <a class="text" id="open-modal"> Login </a>
+            <div id="modal">
+                <div class="modal-content">
+
+                  <div class="logintext">Login</div>
+
+                  <button id="close-modal">X</button>
+
+                  <div class="login-box">
+                    <span class="text">ID</span>
+                    <input class="input" type="text">
+                  </div>
+                  <div class="login-box">
+                    <span class="text">Password</span>
+                    <input class="input" type="password">
+                  </div>
+
+                  <div class="login-click">로그인</div>
+
+                  <div class="help">
+                    <a href="./join.html">회원가입</a>
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                  </div>
+
+                  <div class="logintext">SNS 로그인</div>
+
+                  <div class="sns-login">
+                      <img class="icon" onclick="location.href='#'" src="./img/sns-icon/login-naver.png">
+                      <img class="icon" onclick="location.href='#'" src="./img/sns-icon/login-google.png">
+                      <img class="icon" onclick="location.href='#'" src="./img/sns-icon/login-kakaotalk.png">
+                      <img class="icon" onclick="location.href='#'" src="./img/sns-icon/login-facebook.png">
+                  </div>
+
+                </div>
+              </div>
+            <a href="./join.html" class="text"> Join </a>
             <a href="#" class="text"> MyPage </a>
             <a href="#" class="text"> Order </a>
             <a href="#" class="text"> Cart </a>
@@ -302,7 +339,7 @@
             <li> ⓒ 2023. SIMPLEBUTSLAY All rights reserved. </li>
         </ul>
     </footer>
-
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
